@@ -1,0 +1,26 @@
+window.onload = function() {
+
+    fetch("https://api.ebird.org/v2/data/obs/geo/recent/{{bkcnih2}}?lat={{37.804363}}&lng={{-122.271111}}", requestOptions)
+
+ 
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error))
+   
+    .then(function(json) {
+ 
+       var tableCode = '<table><caption>Night Heron Sightings</caption><thead><tr><th>Title</th><th>Author</th><th>Year</th><th>Publisher</th></tr></thead><tbody>';
+ 
+       for (var i = 0; i < json.length; i++) {
+          tableCode += '<tr><td>' + json[i].date + '</td><td>' + json[i].author + '</td><td>' + json[i].year + '</td><td>' + json[i].publisher + '</td></tr>';
+       }
+ 
+       tableCode += '</tbody><tfoot><tr><td colspan="4">Source: eBird API 2.0</td></tr></tfoot></table>';
+ 
+       document.getElementById('bibliography').innerHTML = tableCode;
+   })
+ }
+ var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};

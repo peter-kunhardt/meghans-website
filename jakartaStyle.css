@@ -1,0 +1,38 @@
+/* My CSS styles for visitJakarta.html in this file */
+
+/*Here is my updated h1 border and centering of text*/
+h1 {
+width: 50%;
+padding: 10px;
+border: 10px solid #98FF98;
+margin: auto;
+text-align: center}
+
+/*Updated - Here are the changes that apply to two paragraphs*/
+p.eat-drink, p.visit { text-indent: 10%; }
+
+/*updated - changes to only the visit element*/
+visit {color: #8B0000}
+
+/*Here is the rule applying to the nth-child.*/
+.restaurants li:nth-child(3) {
+	text-transform: uppercase;
+	color: blue;
+}
+
+/*Changes to how the links appear*/
+a:link {
+	color: green;
+}
+
+a:visited {
+	color: blue;
+}
+
+a:hover {
+	color: black;
+}
+
+a:active {
+	color: red;
+}

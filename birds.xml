@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="https://api.ebird.org/v2/data/obs/geo/recent?lat={{37.814272}}&lng={{-122.2541312}}">
+<xsl:output method="html" indent="yes" encoding="UTF-8"/>
+<xsl:template match="/">
+
+ <table class="birds">
+
+   <caption>Night Heron Sightings</caption>
+
+   <thead>
+     <tr>
+       <th>Date</th>
+       <th>Siting</th>
+
+     </tr>
+   </thead>
+
+   <tbody>
+
+     <xsl:for-each select="bird/sighting">
+
+       <tr>
+         <td><xsl:value-of select="date"/></td>
+         <td><xsl:value-of select="location"/></td>
+       </tr>
+
+     </xsl:for-each>
+
+   </tbody>
+
+   <tfoot>
+     <tr>
+     <td colspan="4">Source: ebird API 2.0</td>
+     </tr>
+   </tfoot>
+
+ </table>
+
+</xsl:template>
+</xsl:stylesheet>

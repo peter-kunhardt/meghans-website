@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Night Herons of Oakland</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="imageStyle.css">
+    <style> body {background-color: "lightblue"}
+    body {
+      background-color: #F5F4F3;     
+    }
+
+    nav.primary-menu{
+width: auto;
+margin: auto;
+border: solid 5px #822EFF;
+text-align: center;
+background-color: #5E5A80;
+}
+.primary-menu ul{
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+
+
+
+.primary-menu li{
+list-style-type: none;
+}
+
+
+.primary-menu a:hover{
+background-color: #C2DFFF;
+color: #000080
+}
+
+.primary-menu a{
+color: #FFFFFF;
+text-decoration: none;
+display: block;
+width: 100px;
+padding: 4px 0;
+border: solid
+}
+ul{
+  list-style-type: square;
+}
+ol{
+  list-style-type: lower-alpha;
+}
+
+.item1 { grid-area: item1; }
+    .item2 { grid-area: 1 / 2; }
+    .item3 { grid-area: item3; }
+    .item4 { grid-area: 2 ; }
+    .item5 { grid-area: item5; }
+    .item6 { displau: none; }
+    .item7 { grid-area: item7; }
+    .item8 {display:none;}
+    .item9 {display:none;}
+
+    .wrapper {
+      max-width: 900px;
+      margin: 0px auto;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        'item1 item2 item3'
+        'item4 item5 item6'
+        'item7 item7 item7';
+      gap: 10px;
+      background-color: #F8F8FF;
+      padding: 10px;
+    }
+
+    .wrapper > div {
+      background-color: #B3D9D9;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+
+    form{
+    border: 5px solid white;
+     width: 50%;
+     height: 50%;
+    padding: 5%;
+    margin: auto;
+    color: white;
+      text-shadow: 4px 4px 4px #000000;
+    background-image: url("/images/nightherons/20230521_175145.jpg");
+    background-color: black;
+      background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+.table td {
+  border: 1px solid #000;
+  padding: 5px;
+  background-color: #FFFFFF;
+}
+
+.table tr {
+  border: 1px solid #000;
+  padding: 5px;
+  background-color: #FFFDD0;
+}
+tr:hover {
+  background-color: #A6FFDD;
+}
+
+td:hover {
+  background-color: #DCD0FF;
+}
+
+
+input[type=submit]
+  {background-color: #AFDCEC;	
+  color: black;
+  border: 1px;
+  padding: 12px 24px;
+  margin: 4px 2px;}
+
+  
+input[type=reset]
+  {background-color: #AFDCEC;	
+  color: black;
+  border: 1px;
+  padding: 12px 24px;
+  margin: 4px 2px;}
+
+.media {
+ position: relative;
+ padding-bottom: 56.25%;
+ padding-top: 30px;
+ height: 0;
+ overflow: hidden;
+}
+
+.media iframe {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+}
+</div>
+
+ 
+  <style>
+    /* Here is my internal style sheet.*/
+            .indent {
+                text-indent:20%;} 
+            .highlight {
+                background-color: #C25283;}
+            #shape {
+                list-style-type:square;
+                background-color:lightgoldenrodyellow}
+            .fact {
+                background: #5865F2;
+                border: 1px solid #ccc;
+                padding: 15px;
+                margin: 10px;
+                width: 30%;}
+                
+</style>
+
+</head>
+<!-- This is an example of an inline style -->
+<body style="background-color: lightseagreen">
+
+<nav class="primary-menu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="photos.html">Photos</a></li>
+<li><a href="resources.html">Resources</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<h1>Night Herons of Oakland</h1>
+
+<div class="media">
+
+<iframe width="315" height="560" src="https://www.youtube.com/embed/FbCiHliuTlY" title="Night Herons in Downtown Oakland" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<p>These night herons were hanging out on 10th St. next to Webster St. across the street from <a href="https://shandong-restaurant.res-menu.com/">Shan Dong</a> in the hopes that they would get some noodles being thrown out after closing time. But then, as I was walking home with lefover pizza, the night herons must have smelled it because a handful of them flew towards me as I was walking by. There are 14 night herons in this video, though most are hard to spot initially.</p>
+<br>
+<video id="video" width="300">
+      <source src="https://meghanlongsjsu.w3spaces.com/video/20250408_080305.mp4" type="video/mp4">
+    </video>
+    <br>
+    <button id="videoButton" onclick="playVideo()">Play</button>
+    <script>
+    var video = document.getElementById("video");
+    var btn = document.getElementById("videoButton");
+
+    function playVideo() {
+      if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+  }
+    </script>Night heron grooming themself
+
+     <title>Data Serialization Module</title>
+    <script src="birds.js"></script>
+    <link rel="birds" href="birds.css">
+</head>
+<body>
+    <h3>Night Heron Observations in Oakland</h3>
+    <div id='birds'></div>
+
+  </body>  
+<!-- creating a grid  
+
+
+<div class="wrapper">
+  <div class="item1"><img src="images/nightherons/dumpster1.png" style="max-width: 500px;" > </div>
+  <div class="item2">The Oakland library offers a library card that features a night heron. <img src="images/nightherons/librarycard.png" style="max-width: 300px;"></div>
+  <div class="item3"></div>
+  <div class="item4">4</div>
+  <div class="item5">The <a href="https://illinoisaudubon.org/bcnh-project/" target="_blank">Chicago Night Heron Project</a> by the IL Audobon Society performs research and brings awareness around the night herons in Chicago</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>
+  <div class="item9">9</div>
+  </div>
+  
+<!-- testing floating images  -->
+
+<img class="img-right" src="images/nightherons/nightheroncloseup.jpg" alt="close up of a night heron on a dumpster" style="width: 200px">
+<h2 class="highlight">Background</h2>
+    <p class="indent">Black-crowned Night Herons are small herons with rather squat, thick proportions. They have thick necks, large, flat heads, and heavy, pointed bills. The legs are short and, in flight, barely reach the end of the tail. The wings are broad and rounded. They're a social bird and normally roost in groups called rookeries. Black-crowned Night Herons often spend their days perched on tree limbs or concealed among foliage and branches. They forage in the evening and at night, in water, on mudflats, and on land. In flight they fold their head back against their shoulders, almost making the neck disappear. They have a funny sqwuak call is very distinctive, <a href="https://www.youtube.com/watch?v=Gj98Mdv_i_g" target="_blank">heard here</a>. They hae a wide habitat and can be found in both North America and Europe. They enjoy marshes, lakes, and any dumpster near a body of water.</p>
+
+<table class="table">
+ <h3>Black-Crowned Night Heron Subspecies Facts</h3>
+   <thead>
+    <th>Subspecies:</th>
+    <th>N. n. nycticorax</th>
+    <th>N. n. hoactli</th>
+    <th>N. n. obscurus</th>
+    <th>N. n. falklandicus</th>
+   </thead>
+   <tbody>
+  <tr>
+    <td>Named By:</td>
+    <td>Linnaeus, 1758</td>
+    <td>Gmelin, 1789</td>
+    <td>Bonaparte, 1855</td>
+    <td>Hartert, 1914</td>
+  </tr>
+  <tr>
+    <td>Range:</td>
+    <td>Eurasia south to Africa, east Asia, Philippines, and Indonesia</td>
+    <td>southern Canada to northern Argentina and northern Chile; Hawaii</td>
+    <td>central and southern Chile and southwest Argentina</td>
+    <td>Falkland Islands</td>
+  </tr>
+  <tr>
+    <td>Onomatopoeia Names</td>
+    <td>kowak-malam, vạc, kwak</td>
+    <td>hoactli</td>
+    <td>waqwa</td>
+    <td>Quark</td>
+  </tr>
+  <tr>
+    <td>Diet:</td>
+    <td colspan="4">small mammals, fish, crustaceons, insects, amphibeans, lizards, small birds, trash, etc</td>
+  </tr>
+  <tr>
+       <td>Habitat:</td>
+       <td rowspan="2">marshes, rivers, ponds, mangrove swamps, urban canopies, rice fields, and tidal flats.</td>
+       </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+       <td colspan="5"><a href="https://en.wikipedia.org/wiki/Black-crowned_night_heron">Black-Crowned Night Heron Wikipedia</a></td>
+    </tr>
+  </tfoot>
+</table>
+
+<h2>Other Types of Night Herons</h2>
+<ol>
+  <li>Bermude Night Heron
+    <ul>
+      <li>The bermuda night heron went extinct during the 17th century during the colonization of Bermuda.</li>
+        </ul>
+        </li>
+  <li>Yellow-Crowned Night Heron
+  <ul>
+    <li>Unlike the black-crowned night heron, the yellow-crowned night heron is only found in the Americas</li>
+    <li>There are five subspecies of the yellow-crowned night heron</li>
+    <li>In the 1970s, the yellow-crowned night heron was introduced to Bermuda to try to replicate the ecological benefits of the bermuda night heron, however, the yellow-crowned night heron is a generalist eater and has wreaked havoc on the local land crab population.</li>
+  </ul>
+  </li>
+  <li>White-Eared Night Heron</li>
+      <ul>
+        <li>Primarily found in southern China and northern Vietnam, it was listed as an endangered species in the 1990s due to rapid decline in the population caused by habitat loss and water pollution.</li>
+        </ul>
+  <li>Japanese Night Heron
+    <ul>
+        <li>The japanese night heron is extremely rare and is a protected species in Japan and Hong Kong. It faces habitat loss and predation from invasive species that were introduced to Japan in the early 1900s.</li>
+        </ul>
+        </li>
+  <li>Malayan Night Heron
+    <ul>
+      <li>The malayan night heron has a wide habitat range and can be found in most Southeast Asian countries. It is not a threatened species and is considered a vagrant in Palau and Korea.</li>
+      </ul>
+      </li>
+</ol>
+
+<h2>The Official Bird of Oakland</h2>
+    <p class="indent">Oakland is home to the largest black-crowned night heron rookery in the San Francisco Bay Area. In 2019, after two years of campaigning, a group of elementary school kids got the city of Oakland to name the black-crowned night heron the official bird of Oakland. In the heart of the densest part of Oakland lies Lake Merritt. While called a lake, this is an ancient tidal lagoon that in 1870 was officially designated a wildlife refuge, the first in the United States. Lake Merritt to this day attracts dozens of species of birds, sharks, sting rays, a variety of fish, and recently, salmon that were trying to get to the streams that have been choked off for decades. As a result of this ancient tidal lagoon being in Downtown Oakland, it also means that Downtown Oakland became home to several large night heron rookeries. The children that went to the elementary school next to one of these rookeries led the campaign that got the black-crowned night heron named the official bird of Oakland.</p> 
+    <p>Neighborhoods that Night Herons Frequent in Oakland</p>
+    <ul id="shape">
+        <li>Chinatown</li>
+        <li>Lake Merritt</li>
+        <li>Eastlake</li>
+        <li>Adam's Point</li>
+    </ul> 
+    <p>At least as of late 2024, while night herons could be found all across Oakland, they were most predominately roosting in the Downtown area, predominately Chinatown.</p> 
+<img class="img-left" src="images/nightherons/dumpsterdiving.jpg" alt="a night heron on a dumpster with a caption, one man's trash is another bird's treasure." style="width: 250px">
+<h2>Is Oakland Failing its Official Bird?</h2>
+    <p>Oakland has had a lot of struggles in recent decades, one of which was underinvestment, particularly in the Downtown Neighborhoods. Downtown Oakland went many decades with little to no new construction, allowing empty lots to litter the neighborhood. What caused some urban blight also provided a safe place for the night herons to roost. However, in the past decade, as the Bay Area tech boom led to more competition for the limited housing resources, developers finally started building some new apartment buildings in the city. While the new buildings are a net positive for the neighborhood, it has come at a cost to the night herons. Many of the new buildings required trees that were used for roosting in to come down. While efforts were made by local bird rescues to encourage the birds to roost in trees closer to Lake Merritt, the birds just kept relocating to trees near their old ones, leaving just a handful of trees left that they prefer for roosting.</p>
+<h2>The Heron Rescue Project</h2>
+    <p>The <a href="https://www.oaklandzoo.org/wildlife-conservation/heron-rescue-project" target="_blank">Oakland Zoo</a> in partnership with the Audobon Society started a rescue project to help the night herons of Oakland. ‍During fledgling season, Oakland Zoo staff walk the streets surrounding the birds' rookery every day, looking for fallen and injured birds. Injured young birds are carefully captured for transport to Oakland Zoo. On their rounds, the Heron Rescue Team connects with the community about the program. Injured birds are taken to Oakland Zoo for intermediary medical evaluation and treatment. Oakland Zoo then provides transport to International Bird Rescue, a world-leading wild water bird rehabilitative care organization. The rehabilitated birds are then released into safe and appropriate local habitats, including the Bay shoreline in Oakland. In 2022, the Heron Rescue Team rescued 122 night herons.</p>
+<img class="img-right2" src="https://meghanlongsjsu.w3spaces.com/images/nightherons/nightheronsepia.jpg" alt="a night heron on a dumpster with a sepia tone." style="width: 300px">
+<h2>The Bird Flu</h2>
+    <p>H5N1, commonly referred to as the Bird Flu, has been decimating bird populations across the country, both domestic and wild. Unfortunately, Lake Merritt and the broader San Francisco Bay Area region has not been immune to this. Recently, there have been dead birds spotted near the lake that have tested positive for H5N1. As the Downtown Oakland night herons roost in crowded trees along with egrets, if just one or two birds show up with the flu to a rookery, it has the potential to wipe out dozens of birds. Night herons have been shown to be susceptible to the bird flu and it can kill them after only 4-5 days. While I have not found any articles explicitly mentioning local night herons and the bird flu, there has been a noticable drop in the population in the neighborhood. Their roosting trees have been noticably empty and quieter and their late night sqwuaks have been less frequent. However, it has been a colder winter than normal here in Oakland, so I am holding out hope that as things start to warm up again, we will start seeing more come back to the neighborhood. Night herons are a resilient species, so it is too early to count them out, but the bird flu trends are still very concerning.</p>
+<h2>What This Means to Me</h2>
+    <p>Shortly after moving to Oakland in 2012, late one night I heard the night heron sqwuak and was confused by this weird noise that had just reverberated through the neighborhood. Weeks later, I would be walking through Chinatown around sunset, and see these weird birds hanging out on the sidewalks and realize that these dinosaurs were part of the neighborhood. Over the years, I have grown especially fond of these birds, so much so that last year I started an instagram account called <a href="https://www.instagram.com/nightheronsofoakland/" target="_blank">Night Herons of Oakland</a> that has become an appreciation page for the night herons in the city I call home. I feel very protective of these birds and I hope that they can continue to co-exist with us humans that live here, especially since they were here first. Since this assignment was photo based, I felt more comfortable using photos that are mine rather than snagging some copyrighted photos off of google, hence why this topic got changed from my original one. But also, I wanted to share a little bit about these cool birds, who hopefully will be returning to the neighborhood soon. I miss seeing them around town at sunset and on my way to BART in the mornings.</p>
+
+
+<img src="images/nightherons/nightheroncloseup.jpg" alt="close up of a night heron on a dumpster" style="width: 800px" class="responsive">
+ 
+
+ <h1>Volunteer Sign-Up Form</h1>
+<form  action="https://gophp.w3spaces.com/contactA.php" method="post">
+  
+  <label for="name">Full Name</label><br>
+     <input type="text" id="name" name="name" value="" required><br><br>
+
+  <label for="phone">Phone</label><br>
+      <input type="text" name="phone" id="phone"> <br><br>
+
+   <label for="email">Email</label><br>
+      <input type="text" id="inputemail" name="email" value="" required><br><br>
+
+       <label for="date">Today's Date</label><br>
+  <input type="date" id="date" name="date"> <br><br>
+
+<legend>What kind of volunteering are you interested in?:</legend>
+<fieldset>
+  <input type="checkbox" id="trash" name="shifts" value="trash">
+  <label for="trash">Trash Pickup</label><br>
+  <input type="checkbox" id="watch" name="shifts" value="watch">
+  <label for="trash">Bird monitoring</label><br>
+  <input type="checkbox" id="beautification" name="shifts" value="beautification">
+  <label for="trash">Tree and Flower Planting</label><br>
+  <input type="checkbox" id="rescue" name="shifts" value="rescue">
+  <label for="trash">Assist with bird rescue</label><br>
+  </fieldset><br><br>
+
+  <label for="city">What city are you interested in volunteering in?:</label>
+  <select id="city" name="city">
+      <option value="Oakland">Oakland</option>
+      <option value="New York City">New York City</option>
+      <option value="Chicago">Chicago</option>
+      <option value="Baltimore">Baltimore</option>
+      <option value="Philadelphia">Philadelphia</option>
+    </select><br><br>
+    
+  <textarea name="subject" rows="10" cols="30">Share some information on why you're interested in volunteering with us...</textarea>
+      <fieldset>
+          <legend>How did you hear about the Night Heron Project</legend>
+          <input list="promotion">
+          <datalist id="promotion">
+            <option value="Family/Friend">
+            <option value="Social Media">
+            <option value="Search Engine">
+            <option value="News Article">
+            <option value="Other">
+          </datalist>
+          </fieldset><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">  
+            
+             </form>
+   
+
+ <footer style="text-align:center;">
+<p class="test" style="text-align:center;"><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Services</a> | <a href="#">News</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+<br><br>
+<p class="test" style="text-align:center;">Copyright © - All rights reserved</p>
+</footer>
+</body>
+</html>

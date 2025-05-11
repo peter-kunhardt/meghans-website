@@ -1,0 +1,15 @@
+/* Place your CSS styles in this file */
+
+h1 {color: darkblue;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    /*Here is a comment in my extenal stylesheet*/}
+
+h2 {background-color: #3090C7;
+    font-family: "Papyrus", "Brush Scipt MT", "Monaco"}
+
+p {text-align: left; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: navy;
+    background-color: #FFFFCC;}    

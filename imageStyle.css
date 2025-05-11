@@ -1,0 +1,23 @@
+ /* My CSS image styles in this file */
+ 
+ .img-right { float: right; margin-left: 10px; border: 15px dotted #a36af3; 
+  }
+
+  .img-left { float: left;  border: 5px double #050404; margin-right: 10px;
+  }
+
+  .img-right2 { float: right;  border: 10px groove #340552; margin-left: 10px;
+  }
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+.test {
+background-image: url(images/v915-techi-007-l.jpg);
+ background-size: contain;
+        background-repeat: repeat;
+        max-width: 100%;
+        height: auto;
+        color: black;
+}
